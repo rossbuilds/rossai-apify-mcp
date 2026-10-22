@@ -1,0 +1,9 @@
+.git
+node_modules
+dist
+bundle
+.mcpb-stage
+tests
+*.log
+.env
+.env.*

@@ -61,3 +61,12 @@ https://mcp.apify.com/?actors=appreciative_duct/sitemap-url-extractor,appreciati
 ## Source
 
 https://github.com/rossbuilds/rossai-apify-mcp
+
+## Docker
+
+```bash
+docker build -t rossai-apify-mcp .
+docker run -i --rm -e APIFY_TOKEN rossai-apify-mcp
+```
+
+The image runs the stdio server as the non-root `node` user. No token is baked in; pass `APIFY_TOKEN` at runtime.
