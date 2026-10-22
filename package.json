@@ -1,0 +1,45 @@
+{
+  "name": "rossai-apify-mcp",
+  "version": "1.0.0",
+  "description": "MCP server that runs Ross AI Apify actors with the caller's own APIFY_TOKEN.",
+  "type": "module",
+  "license": "MIT",
+  "bin": {
+    "rossai-apify-mcp": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "server.json",
+    "glama.json",
+    "mcpb/manifest.json"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js",
+    "start:http": "node dist/index.js --http",
+    "test": "tsx --test tests/*.test.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "bundle": "npm run build && node scripts/make-mcpb.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "express": "^5.3.0",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^22.19.0",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rossbuilds/rossai-apify-mcp.git"
+  },
+  "homepage": "https://github.com/rossbuilds/rossai-apify-mcp#readme",
+  "mcpName": "io.github.rossbuilds/rossai-apify-mcp"
+}

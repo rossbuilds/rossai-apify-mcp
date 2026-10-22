@@ -1,0 +1,20 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.rossbuilds/rossai-apify-mcp",
+  "title": "Ross AI Apify Actors",
+  "description": "Run Ross AI Apify actors with your own token. Sitemap, SEO, Trends, screenshots, reviews, Markdown.",
+  "repository": { "url": "https://github.com/rossbuilds/rossai-apify-mcp", "source": "github" },
+  "version": "1.0.0",
+  "packages": [
+    {
+      "registryType": "mcpb",
+      "identifier": "https://github.com/rossbuilds/rossai-apify-mcp/releases/download/v1.0.0/rossai-apify-mcp-1.0.0.mcpb",
+      "version": "1.0.0",
+      "fileSha256": "76d61ead3e70a00da916aa38874f37118c1d3156730cf6374c547715f59607e9",
+      "transport": { "type": "stdio" },
+      "environmentVariables": [
+        { "name": "APIFY_TOKEN", "description": "Your own Apify API token. This package does not include one.", "isRequired": true, "isSecret": true }
+      ]
+    }
+  ]
+}

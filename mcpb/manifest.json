@@ -1,0 +1,28 @@
+{
+  "manifest_version": "0.2",
+  "name": "rossai-apify-mcp",
+  "display_name": "Ross AI Apify Actors",
+  "version": "1.0.0",
+  "description": "Run the Ross AI Apify actors from an MCP client. Uses your own Apify token.",
+  "author": { "name": "Ross AI" },
+  "server": {
+    "type": "node",
+    "entry_point": "dist/index.js",
+    "mcp_config": {
+      "command": "node",
+      "args": ["${__dirname}/dist/index.js"],
+      "env": {
+        "APIFY_TOKEN": "${user_config.apify_token}"
+      }
+    }
+  },
+  "user_config": {
+    "apify_token": {
+      "type": "string",
+      "title": "Apify API token",
+      "description": "Your own Apify token. The bundle does not include one.",
+      "sensitive": true,
+      "required": true
+    }
+  }
+}
