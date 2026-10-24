@@ -1,5 +1,8 @@
 # rossai-apify-mcp
 
+[![Listed on mcpservers.org](https://mcpservers.org/badge.svg)](https://mcpservers.org/servers/rossbuilds/rossai-apify-mcp)
+
+
 MCP server for the public Apify actors published by [appreciative_duct](https://apify.com/appreciative_duct). Each tool starts an Actor run with the Apify API and returns the dataset items.
 
 The server reads `APIFY_TOKEN` from the environment. That token has to be yours. Nothing in this package embeds one.
