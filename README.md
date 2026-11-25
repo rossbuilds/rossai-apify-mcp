@@ -1,6 +1,7 @@
 # rossai-apify-mcp
 
 [![Listed on mcpservers.org](https://mcpservers.org/badge.svg)](https://mcpservers.org/servers/rossbuilds/rossai-apify-mcp)
+[![rossbuilds/rossai-apify-mcp MCP server](https://glama.ai/mcp/servers/rossbuilds/rossai-apify-mcp/badges/score.svg)](https://glama.ai/mcp/servers/rossbuilds/rossai-apify-mcp)
 
 
 MCP server for the public Apify actors published by [appreciative_duct](https://apify.com/appreciative_duct). Each tool starts an Actor run with the Apify API and returns the dataset items.
